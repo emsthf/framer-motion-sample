@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #e09, #af02bb);
 `;
 
 const Box = styled(motion.div)`
@@ -22,7 +23,8 @@ function FirstAnimation() {
   return (
     <Wrapper>
       <Box
-        transition={{ type: "spring", damping: 1 }}
+        // damping이 0이면 저항이 없어서 무한 스프링함
+        transition={{ type: "spring", damping: 5 }}
         initial={{ scale: 0 }}
         animate={{ scale: 1, rotateZ: 360 }}
       />

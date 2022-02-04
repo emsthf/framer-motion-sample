@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #e09, #af02bb);
 `;
 
 const Box = styled(motion.div)`
@@ -20,7 +21,7 @@ const Box = styled(motion.div)`
 
 const myVars = {
   start: { scale: 0 },
-  end: { scale: 1, rotateZ: 360, transition: { type: "spring", damping: 1 } },
+  end: { scale: 1, rotateZ: 360, transition: { type: "spring", damping: 5 } },
 };
 
 function VariantsEx1() {
