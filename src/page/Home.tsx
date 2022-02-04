@@ -103,6 +103,9 @@ function Home() {
             <Li>
               <Link to="/final">Final Project</Link>
             </Li>
+            <Li>
+              <Link to="/challenge">Code Challenge</Link>
+            </Li>
           </ul>
         </Board>
       </Container>

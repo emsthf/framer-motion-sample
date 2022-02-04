@@ -20,6 +20,7 @@ import Slider2 from "./components/animatePersence/Slider2";
 import LayoutProp from "./components/animatePersence/LayoutProp";
 import ShardLayoutAnimation from "./components/animatePersence/ShardLayoutAnimation";
 import Final from "./components/animatePersence/Final";
+import Challenge from "./components/animatePersence/Challenge";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/layoutProp" element={<LayoutProp />} />
         <Route path="/shardLayoutAnimation" element={<ShardLayoutAnimation />} />
         <Route path="/final" element={<Final />} />
+        <Route path="/challenge" element={<Challenge />} />
       </Routes>
     </BrowserRouter>
   );
