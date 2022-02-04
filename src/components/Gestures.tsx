@@ -21,13 +21,13 @@ const Box = styled(motion.div)`
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
 `;
 
-const Circle = styled(motion.div)`
-  background-color: white;
-  height: 70px;
-  width: 70px;
-  place-self: center;
-  border-radius: 35px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
+const Text = styled.div`
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  line-height: 1.2;
+  position: absolute;
+  top: 80px;
 `;
 
 const boxVariants = {
@@ -39,6 +39,7 @@ function Gestures() {
   return (
     <Wrapper>
       <Box variants={boxVariants} whileHover="hover" whileTap="click" />
+      <Text>Mouse hover & Click</Text>
     </Wrapper>
   );
 }

@@ -25,7 +25,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
         <Route path="/firstAnimation" element={<FirstAnimation />} />
         <Route path="/variants1" element={<VariantsEx1 />} />
         <Route path="/variants2" element={<VariantsEx2 />} />
